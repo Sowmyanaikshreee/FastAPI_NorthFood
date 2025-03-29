@@ -1,0 +1,157 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+body {
+    
+    color: white; 
+    background-image: url(images/bg.jpg);
+  }
+
+
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 15px 0;
+  background: rgba(0, 0, 0, 0.6); 
+  backdrop-filter: blur(10px); 
+  transition: all 0.4s ease;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.nav-content {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 20px;
+}
+
+
+.nav-container {
+  background: rgba(255, 255, 255, 0.2); 
+  padding: 25px 25px;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(255, 255, 255, 0.2);
+}
+
+
+.nav-links {
+  display: flex;
+  gap: 30px; 
+}
+
+.nav-links li {
+  list-style: none;
+}
+
+.nav-links li a {
+  color: #fff;
+  font-size: 18px;
+  font-weight: 600;
+  padding: 10px 15px;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+
+.nav-links li a:hover {
+  background: rgba(255, 255, 255, 0.3);
+  color: #1744d6;
+  transform: scale(1.05);
+}
+
+
+nav.sticky {
+  background: #0e2431;
+  padding: 12px 0;
+}
+
+nav.sticky .nav-container {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+nav.sticky .nav-links li a:hover {
+  color: #fff;
+  background: rgba(255, 255, 255, 0.2);
+}
+
+
+.home {
+  height: 100vh;
+  width: 100%;
+  background: url("images/AI_girl.jpg") no-repeat center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+
+.text {
+    max-width: 900px;
+    margin: 50px auto;
+    padding: 40px;
+    background: white;
+    color: #060707; 
+    border-radius: 12px; 
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3); 
+    text-align: justify;
+    font-size: 18px;
+    line-height: 1.8;
+    position: relative;
+  }
+  
+
+  .text::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url("images/background.jpg") no-repeat center;
+    background-size: cover;
+    opacity: 0.1; 
+    border-radius: 12px;
+    z-index: -1;
+  }
+  
+ 
+  .text h2 {
+    font-size: 32px;
+    color: #0e56b3;
+    text-align: center;
+    margin-bottom: 15px;
+    font-weight: 700;
+  }
+  
+ 
+  .text b {
+    color: #0f43ee; 
+  }
+  
+
+
+ 
+  
+  @media (max-width: 768px) {
+    .text {
+      padding: 30px;
+      font-size: 16px;
+      line-height: 1.6;
+    }
+    
+    .text h2 {
+      font-size: 26px;
+    }
+  }
+  
